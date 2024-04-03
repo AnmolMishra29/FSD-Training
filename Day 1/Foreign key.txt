@@ -1,0 +1,20 @@
+Foreign key is a coloum or a group of columns that provides a link between data in 2 tables
+
+
+Foreign key(Column_name) REFERENCES Table2(Column_name));
+
+
+create table department(
+deptId int primary key,
+depart_name varchar(30),
+location varchar(60)
+)
+
+
+create table Employee(
+ employeeId int primary key,
+ emp_name varchar(30),
+ branch varchar(10),
+ deptId int,
+ foreign key (deptId) references department(deptId)
+)
