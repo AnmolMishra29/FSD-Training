@@ -1,0 +1,85 @@
+------------------------------------------------------------CREATE PRODUCTS, CART, USERS AND ORDERS TABLE-----------------------------------------------------------------------------------
+
+
+-- CREATE TABLE Products  (
+-- ProductId INT PRIMARY KEY AUTO_INCREMENT,
+-- Product_Name VARCHAR(20) NOT NULL,
+-- QuantityInStock INT NOT NULL,
+-- UnitPrice INT,
+-- CHECK (UnitPrice>0),
+-- Category VARCHAR(30) NOT NULL
+-- );
+
+-- CREATE TABLE Cart (
+--    CartId INT PRIMARY KEY AUTO_INCREMENT,
+--    ProductId int,
+--    FOREIGN KEY (ProductId) references Products(ProductId) ON DELETE CASCADE,
+--    Quantity INT NOT NULL,
+--    CHECK (Quantity>0),
+--    userId INT NOT NULL
+-- );
+
+-- CREATE TABLE Users (
+--    userId INT PRIMARY KEY AUTO_INCREMENT,
+--    UserName VARCHAR(20) NOT NULL,
+--    User_Password VARCHAR(20),
+--    ContactNumber VARCHAR(10) NOT NULL,
+--    Address VARCHAR(50) NOT NULL
+-- );
+
+-- CREATE TABLE Orders (
+--    OrderId INT PRIMARY KEY AUTO_INCREMENT,
+--    CartId int,
+--    userId INT NOT NULL,
+--    OrderDate DATE,
+--    FOREIGN KEY (userId) references Users(userId) ON DELETE CASCADE
+-- );
+
+------------------------------------------------------------------------INSERTING DATA INTO TABLE-------------------------------------------------------------------------------------------
+
+
+-- insert into Products values(1,"Television",30,17500,"Electronics");
+-- insert into Products values(2,"Gloves",76,576,"Clothes");
+-- insert into Products values(3,"PullUp Bar",90,1100,"Gym Equipments");
+-- insert into Products values(4,"Monitor",110,25400"Electronics");
+-- insert into Products values(5,"Shirt",200,590,"Clothes");
+-- insert into Products values(6,"Pants",0,790,"Clothes");
+
+
+INSERT DATA INTO USERS TABLE
+-- insert into Users values(1,"Yuvraj","Yuvraj@123","7233042957","Kanpur");
+-- insert into Users values(2,"Sankalp","Sankalp@123","7233042996","Lucknow");
+-- insert into Users values(3,"Ayush","Ayush@123","7233042945","Noida");
+-- insert into Users values(4,"Anany","Anany@123","7233042922","Chennai");
+-- insert into Users values(5,"Shadmaan","Shadmaan@123","7233042989","Kolkata");
+
+
+INSERT DATA INTO CART TABLE
+-- insert into Cart values(1,2,4,4);
+-- insert into Cart values(2,5,7,5);
+-- insert into Cart values(3,2,3,2);
+-- insert into Cart values(4,1,8,3);
+-- insert into Cart values(5,3,2,1);
+
+
+INSERT DATA INTO ORDERS TABLE
+-- insert into Orders values(1,2,4,"2023-05-26");
+-- insert into Orders values(2,4,1,"2023-04-22");
+-- insert into Orders values(3,1,3,"2023-10-29");
+-- insert into Orders values(4,3,2,"2023-03-23");
+-- insert into Orders values(5,3,2,"2023-12-10");
+
+-------------------------------------------------------------------------------QUERIES------------------------------------------------------------------------------------------------------
+
+3.i.a  SELECT * FROM Products;
+3.i.b  SELECT * FROM Products WHERE category="Clothes";
+3.i.c  SELECT * FROM Products WHERE QuantityInStock=0;
+3.i.d  SELECT * FROM Products WHERE UnitPrice BETWEEN 1000 AND 10000;
+3.i.e  SELECT * FROM Products WHERE ProductId="4";
+
+3.ii.a  SELECT * FROM Cart WHERE CartId = 4;
+
+
+3.iii.a  SELECT * FROM Orders WHERE OrderId=2;
+3.iii.b  SELECT * FROM Orders WHERE userId=3;
+3.iii.c  SELECT * FROM Orders WHERE OrderDate="2023-12-10";
