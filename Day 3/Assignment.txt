@@ -1,0 +1,33 @@
+3
+
+a
+In JavaScript, a callback is a function passed as an argument to another function, to be executed later. It allows asynchronous operations by specifying what to do once an action completes, such as handling responses from server requests or events like button clicks. Callbacks facilitate event-driven programming, enabling non-blocking behavior and efficient handling of tasks, common in scenarios like asynchronous I/O operations or event handling in web development.
+
+b
+In JavaScript, the following array methods involve callbacks:
+
+i. map(): Iterates over an array and calls a callback function on each element, creating a new array with the results of calling the callback on each element.
+
+ii. findIndex(): Returns the index of the first element in an array that satisfies a provided testing function. It uses a callback function to test each element.
+
+iii. find(): Returns the first element in an array that satisfies a provided testing function. It uses a callback function to test each element.
+
+iv. filter(): Creates a new array with all elements that pass a provided test implemented by a callback function. It uses a callback function to test each element.
+
+c
+Node.js can be used for building web, real-time, API, microservices, SPAs, CLI tools, IoT, and streaming applications due to its lightweight, event-driven architecture and extensive ecosystem of libraries.
+
+d
+In Node.js, the event loop is a fundamental mechanism responsible for handling asynchronous operations. It continuously checks the call stack and executes tasks from the event queue, ensuring non-blocking I/O operations. This allows Node.js to efficiently manage concurrent requests and maintain responsiveness in event-driven applications.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4
+MySQL is a relational database management system (RDBMS) based on structured query language (SQL), featuring a predefined schema, ACID compliance, and joins for complex queries. It organizes data into tables with rows and columns, offering strong consistency and support for transactions. MongoDB, a NoSQL database, stores data in flexible, schema-less JSON-like documents, providing high scalability and performance for unstructured data. It offers eventual consistency, horizontal scalability, and sharding for distributing data across multiple servers. While MySQL is ideal for structured data and transactions, MongoDB is suitable for agile development, big data, and applications requiring high scalability and flexibility.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5
+In JavaScript, let is a keyword used for declaring variables. It was introduced in ECMAScript 6 (ES6) and provides block scoping, meaning the variable is only accessible within the block it's declared in (commonly denoted by {}).
+
+Var can be declared and accessed globally. Let can be declared globally, but its access is limited to the block in which it is declared. Variables declared using var can be re-declared and updated within the same scope. Variables declared with let can be updated but not re-declared within the same scope.
