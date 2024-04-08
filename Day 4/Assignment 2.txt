@@ -1,0 +1,84 @@
+// Array of product objects
+let products = [
+  { id: 1, pname: "Product 1", price: 10, qty: 5, category: "Category A" },
+  { id: 2, pname: "Product 2", price: 20, qty: 0, category: "Category B" },
+  { id: 3, pname: "Product 3", price: 30, qty: 3, category: "Category A" },
+  { id: 4, pname: "Product 4", price: 40, qty: 10, category: "Category C" }
+];
+
+
+a--
+function displayProductById(productId) {
+  const product = products.find(prod => prod.id === productId);
+  if (product) {
+    console.log("Product Details:", product);
+  } else {
+    console.log("Product not found.");
+  }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+b--
+function displayProductsByCategory(category) {
+  const filteredProducts = products.filter(prod => prod.category === category);
+  if (filteredProducts.length > 0) {
+    const productNamesAndPrices = filteredProducts.map(prod => ({ pname: prod.pname, price: prod.price }));
+    console.log("Products in", category, ":", productNamesAndPrices);
+  } else {
+    console.log("No products found in", category);
+  }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+c--
+function addProduct(newProduct) {
+  products.push(newProduct);
+  console.log("New product added successfully.");
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+d--
+function deleteProduct(productId) {
+  const index = products.findIndex(prod => prod.id === productId);
+  if (index !== -1) {
+    products.splice(index, 1);
+    console.log("Product deleted successfully.");
+  } else {
+    console.log("Product not found.");
+  }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+e--
+function displayProductsByPriceRange(minPrice, maxPrice) {
+  const filteredProducts = products.filter(prod => prod.price >= minPrice && prod.price <= maxPrice);
+  if (filteredProducts.length > 0) {
+    console.log("Products within price range:", filteredProducts);
+  } else {
+    console.log("No products found within the given price range.");
+  }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+f--
+function displayOutOfStockProducts() {
+  const outOfStockProducts = products.filter(prod => prod.qty === 0);
+  if (outOfStockProducts.length > 0) {
+    console.log("Out of stock products:", outOfStockProducts);
+  } else {
+    console.log("No out of stock products found.");
+  }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+g--
+function sortProductsByPrice() {
+  products.sort((a, b) => a.price - b.price);
+  console.log("Products sorted by price:", products);
+}
+

@@ -1,0 +1,54 @@
+1
+A regular expression in JavaScript, often abbreviated as "regex," is a sequence of characters defining a search pattern. It's used for string matching and manipulation tasks. Created with forward slashes /pattern/, or RegExp() constructor, it supports features like literal characters, metacharacters, character classes, quantifiers, groups, and flags, enabling powerful text processing operations.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2
+To use regular expressions in JavaScript, define a pattern enclosed in forward slashes /pattern/ or with the RegExp() constructor. Then, utilize methods like test() to check if a string matches the pattern, or match() to extract matching substrings.Example
+
+var str = "Hello, world!";
+var regex = /world/;
+console.log(regex.test(str)); // Output: true
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3
+a-)
+map() is used to iterate over an array and transform each element according to a provided callback function.
+Syntax: array.map(callback(currentValue, index, array), thisArg)
+
+Example:
+const numbers = [1, 2, 3, 4, 5];
+const doubled = numbers.map(num => num * 2);
+// doubled will be [2, 4, 6, 8, 10]
+
+b-)
+find() is used to search for an element in an array that satisfies a given condition, returning the first matching element or undefined if no match is found.
+Syntax: array.find(callback(element, index, array), thisArg)
+
+Example:
+const numbers = [10, 20, 30, 40, 50];
+const found = numbers.find(num => num > 25);
+// found will be 30
+
+c-)
+findIndex() is similar to find(), but instead of returning the matching element, it returns the index of the first element in the array that satisfies the given condition, or -1 if no match is found.
+Syntax: array.findIndex(callback(element, index, array), thisArg)
+
+Example:
+const numbers = [10, 20, 30, 40, 50];
+const index = numbers.findIndex(num => num > 25);
+// index will be 2 (index of the first element greater than 25)
+
+d-)
+filter() is used to create a new array containing all elements that pass a given condition.
+Syntax: array.filter(callback(element, index, array), thisArg)
+
+Example:
+const numbers = [10, 20, 30, 40, 50];
+const filtered = numbers.filter(num => num > 25);
+// filtered will be [30, 40, 50]
+
+
+
+

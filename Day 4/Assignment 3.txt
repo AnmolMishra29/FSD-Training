@@ -1,0 +1,32 @@
+a--
+We can use Object.values() method to extract only the values of the object
+Example
+const obj = {
+  id: 1,
+  pname: "Product 1",
+  price: 10,
+  qty: 5,
+  category: "Category A"
+};
+
+const values = Object.values(obj);
+console.log(values);
+
+//Output of the above code
+[1, "Product 1", 10, 5, "Category A"]
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+b--
+we can clone the object using spread operator
+Example
+const originalObj = {
+  id: 1,
+  pname: "Product 1",
+  price: 10,
+  qty: 5,
+  category: "Category A"
+};
+
+const clonedObj = { ...originalObj };
+console.log(clonedObj);
