@@ -1,0 +1,39 @@
+1--
+Regular expression to validate Vehicle Registration Number is /^[A-Z]{2}\d{2}[A-Z]{2}\d{4}$/
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2--
+Data structures are methods of organizing and storing data in computers, providing efficient access and manipulation. They define the relationships between the data elements, allowing for optimal operations like insertion, deletion, and searching. Data structures are essential for organizing and managing large volumes of data in software development, as they optimize memory usage, improve algorithm efficiency, and enable faster processing, leading to more scalable and performant applications.
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3--
+Stacks:
+
+a--
+Function Calls: Stacks are used to manage function calls in programming languages. When a function is called, its execution context (including parameters and local variables) is pushed onto the stack, and when the function completes, it is popped off.
+
+b--
+Undo Mechanisms: Many software applications use stacks to implement undo functionality, allowing users to revert to previous states or actions.
+
+c--
+Expression Evaluation: Stacks are used in evaluating expressions, such as arithmetic expressions or postfix expressions (Reverse Polish Notation).
+
+d--
+Backtracking Algorithms: Stacks are utilized in backtracking algorithms, like depth-first search (DFS), used in solving problems like maze solving or finding paths in a graph.
+
+
+Queues:
+
+a--
+Task Queues: Queues are used to manage tasks or jobs in systems like operating systems, web servers, or task scheduling systems. Tasks are queued up and processed in a first-in, first-out (FIFO) manner.
+
+b--
+Print Queue: In printers, queues are used to store print jobs in the order they were received, ensuring fairness in printing.
+
+c--
+Message Queues: Systems like message brokers or message queues use queues to handle communication between different components or systems asynchronously.
+
+d--
+Breadth-First Search (BFS): Queues are crucial in BFS algorithm implementation, used for graph traversal, shortest path finding, or solving puzzles.
