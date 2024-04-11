@@ -2,6 +2,8 @@
 The event loop in JavaScript is a mechanism that manages asynchronous operations. It continuously checks for tasks in the event queue while monitoring the call stack. When the stack is empty, it moves tasks from the queue to the stack, executing them sequentially. This ensures non-blocking execution of code, allowing JavaScript to handle tasks like user input, network requests, and timers efficiently without freezing the application.
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2--
+
 Promises are used in JavaScript to handle asynchronous operations more cleanly and efficiently than traditional callback-based approaches. Here are some reasons why we use promises:
 
 Readability: Promises provide a more readable and maintainable way to handle asynchronous code, especially when dealing with multiple asynchronous operations.
@@ -15,8 +17,6 @@ Composition: Promises allow for composition of asynchronous operations, making i
 Parallel Execution: Promises support parallel execution of multiple asynchronous operations using Promise.all() and Promise.race().
 
 Cleaner Syntax: Promises provide a cleaner and more expressive syntax compared to callbacks, improving code readability and maintainability.
-2--
-Promises in JavaScript are objects representing the eventual completion or failure of an asynchronous operation and its resulting value. They provide a cleaner and more manageable way to handle asynchronous operations compared to callbacks. Promises have three states: pending, fulfilled (resolved), and rejected. They allow chaining multiple asynchronous operations, enabling more readable and maintainable code. Promises simplify error handling with the .catch() method and facilitate parallel execution using Promise.all() and Promise.race().
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
